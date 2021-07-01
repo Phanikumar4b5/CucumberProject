@@ -10,7 +10,7 @@ import cucumber.api.junit.Cucumber;
  features = "Features"
 		 ,glue={"StepDefinition"},
 				 monochrome = true,
-		 dryRun=true
+		 dryRun=false
 		 //strict=false,
 		 //tags= {"@FunctionalTest","~@SmokeTest","~@RegrssionTest"},
 		//format= {"pretty"},

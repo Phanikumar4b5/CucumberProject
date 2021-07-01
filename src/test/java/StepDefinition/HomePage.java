@@ -40,12 +40,15 @@ public class HomePage {
 	
 	@When("^customer enters invalid username \"([^\"]*)\" and password \"([^\"]*)\"$")
 	public void customer_enters_invalid_username_and_password(String arg1, String arg2) throws Throwable {
-		
+		driver.findElement(By.name("userName")).sendKeys(arg1);
+		driver.findElement(By.name("password")).sendKeys(arg2);
+		driver.findElement(By.name("submit")).click();
+		Thread.sleep(5000);
 	}
 
 	@Then("^error message should be thrown$")
 	public void error_message_should_be_thrown() throws Throwable {
-	   
+		System.out.println(driver.findElement(By.xpath("//input[@name='password']//following::span")).getText());
 	}
 
 }
