@@ -4,7 +4,7 @@
   <artifactId>CucumberBDD</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <properties>
-  <cucumber_version>1.2.5</cucumber_version>
+  <cucumber_version>1.2.6</cucumber_version>
   </properties>
   <dependencies>
   
@@ -72,6 +72,14 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>${cucumber_version}</version>
+</dependency>
+
 		
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
