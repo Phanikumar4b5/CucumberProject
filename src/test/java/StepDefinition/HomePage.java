@@ -37,4 +37,15 @@ public class HomePage {
 	String actualText=driver.findElement(By.tagName("h3")).getText();
 	Assert.assertEquals("Login Successfully",actualText);
 	}
+	
+	@When("^customer enters invalid username \"([^\"]*)\" and password \"([^\"]*)\"$")
+	public void customer_enters_invalid_username_and_password(String arg1, String arg2) throws Throwable {
+		
+	}
+
+	@Then("^error message should be thrown$")
+	public void error_message_should_be_thrown() throws Throwable {
+	   
+	}
+
 }
