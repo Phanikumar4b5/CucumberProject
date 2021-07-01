@@ -22,5 +22,5 @@ import cucumber.api.junit.Cucumber;
  		//format= {"json:C:\\\\Users\\\\791733\\\\Documents"}
  )
 
-public class TestRunnerForJunit {
+public class JunitRunner {
 }
