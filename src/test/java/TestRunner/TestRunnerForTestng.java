@@ -6,7 +6,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //@RunWith(Cucumber.class)
 @CucumberOptions(
  features = "Features"
-		 ,glue={"StepDefinition"},
+		 ,glue={"StepDefinition","Hooks"},
 				 monochrome = true,
 		 dryRun=false
 		 //strict=false,
