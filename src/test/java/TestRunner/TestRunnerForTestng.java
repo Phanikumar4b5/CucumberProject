@@ -5,7 +5,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
- features = "Features"
+ features = "Features/LinkVerification.feature"
 		 ,glue={"StepDefinition","Hooks"},
 				 monochrome = true,
 		 dryRun=false
