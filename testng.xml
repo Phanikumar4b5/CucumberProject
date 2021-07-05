@@ -3,6 +3,7 @@
 <suite name="Suite">
 	<test name="Test1">
 		<classes>
+			
 			<class name="RunnerFiles.TestRunnerForTestng" />
 		</classes>
 	</test> <!-- Test -->
