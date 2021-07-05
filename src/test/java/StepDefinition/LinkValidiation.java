@@ -26,7 +26,6 @@ public class LinkValidiation{
 		   driver.manage().window().maximize();
 		   driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	}
-	
 
 	@When("^user clicks on any link$")
 	public void user_clicks_on_any_link() throws Throwable {
