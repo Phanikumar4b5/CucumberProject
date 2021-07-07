@@ -14,6 +14,6 @@ public void beforeRun() {
 
 @After
 public void tearDOwn(Scenario scenario) {
-	System.out.println("Test case status "+scenario.getStatus());
+	System.out.println("Test case status is "+scenario.getStatus());
 }
 }
