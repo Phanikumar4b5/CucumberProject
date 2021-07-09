@@ -41,6 +41,9 @@ public class LinkValidiation{
 
 	@Then("^no link should be broken$")
 	public void no_link_should_be_broken() throws Throwable {
+		this.driver=CucumberHooks.driver;
+		user_clicks_on_any_link();
+		link_should_open_in_seperate_tab();
 		Set<String> allWindows=driver.getWindowHandles();
 		Iterator<String> iterator=allWindows.iterator();
 		while(iterator.hasNext()) {

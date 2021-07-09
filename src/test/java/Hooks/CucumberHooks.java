@@ -27,5 +27,6 @@ public void beforeRun() {
 @After
 public void tearDOwn(Scenario scenario) {
 	System.out.println("Test case status "+scenario.getStatus());
+	driver.quit();
 }
 }

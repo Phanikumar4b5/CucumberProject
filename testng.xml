@@ -5,7 +5,7 @@
 		<classes>
 			<!-- 
 			<class name="RunnerFiles.TestRunnerForTestng" /> -->
-			<class name="org.Testng.TestCases" />
+			<class name="RunnerFiles.TestRunnerForTestng" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
