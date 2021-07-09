@@ -3,8 +3,9 @@
 <suite name="Suite">
 	<test name="Test1">
 		<classes>
-			
-			<class name="RunnerFiles.TestRunnerForTestng" />
+			<!-- 
+			<class name="RunnerFiles.TestRunnerForTestng" /> -->
+			<class name="org.Testng.TestCases" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

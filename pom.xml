@@ -203,6 +203,11 @@
 					<properties>
 						<usedefaultlisteners>true</usedefaultlisteners>
 					</properties>
+					<systemPropertyVariables>
+					<browser>
+					${Browser}
+					</browser>
+					</systemPropertyVariables>
 					<systemProperties>
 						<property>
 							<name>org.uncommons.reportng.escape-output</name>

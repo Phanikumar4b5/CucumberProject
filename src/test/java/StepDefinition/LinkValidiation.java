@@ -4,14 +4,13 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import Hooks.CucumberHooks;
 import cucumber.api.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class LinkValidiation{
 	static WebDriver driver;
@@ -20,11 +19,7 @@ public class LinkValidiation{
 	List<String> titles=new ArrayList<String>();
 	@Given("^user is on practice page$")
 	public void user_is_on_practice_page() throws Throwable {
-		   WebDriverManager.chromedriver().setup();
-		   driver=new ChromeDriver();
-		   driver.get("https://rahulshettyacademy.com/AutomationPractice/");
-		   driver.manage().window().maximize();
-		   driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		   this.driver=CucumberHooks.driver;
 	}
 
 	@When("^user clicks on any link$")
