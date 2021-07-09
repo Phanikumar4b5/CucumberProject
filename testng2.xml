@@ -3,7 +3,7 @@
 <suite name="Suite">
 	<test name="Test1">
 		<classes>
-			<class name="org.Testng.TestCases" />
+			<class name="org.Testng.TestCases2" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

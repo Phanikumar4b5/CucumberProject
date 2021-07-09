@@ -197,25 +197,31 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-					
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng2.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<properties>
-						<usedefaultlisteners>true</usedefaultlisteners>
-					</properties>
-					<systemPropertyVariables>
-					<browser>
-					${Browser}
-					</browser>
-					</systemPropertyVariables>
-					<systemProperties>
-						<property>
-							<name>org.uncommons.reportng.escape-output</name>
-							<value>false</value>
-						</property>
-					</systemProperties>
 				</configuration>
 			</plugin>
-		</plugins>
-	</build>
+			</plugins>
+		  </build>	
+		<profiles>
+		<profile>
+		<id>ParamterPassing</id>
+		  <build>
+		  <pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.19.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng2.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			  </plugins>
+			  </pluginManagement>
+		</build>
+		</profile>
+		</profiles>
 </project>
